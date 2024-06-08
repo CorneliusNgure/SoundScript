@@ -14,16 +14,14 @@ config/config.json
 # Ignore log files
 *.log
 
-# Ignore static files (if generated dynamically)
-src/frontend/static/css/styles.css
-src/frontend/static/js/app.js
-
 # Ignore node_modules if using npm/yarn
 node_modules/
 
 # Ignore system-specific files
 .DS_Store
 Thumbs.db
-materials and resources/# Ignore build files
+materials and resources/
+
+# Ignore build files
 build/
 dist/
