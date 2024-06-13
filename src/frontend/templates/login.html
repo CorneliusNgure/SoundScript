@@ -4,27 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .frame .div {
+            background-color: #fff;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+            height: 100%;
+            min-height: 100vh;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .text-wrapper {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-bar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-bar-right div {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .nav-bar-right div:hover {
+            text-decoration: underline;
+        }
+
+        .contact-button {
+            background-color: #ff4c4c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .contact-button:hover {
+            background-color: #e63939;
+        }
+
+        .container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .container button:hover {
+            background-color: #555;
+        }
+
+        .container p {
+            margin-top: 20px;
+        }
+
+        .container a {
+            color: #ff4c4c;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="frame">
         <div class="div">
             <header class="header">
-                <div class="overlap">
-                    <div class="nav-bar">
-                        <div class="overlap-group">
-                            <div class="text-wrapper">SoundScript</div>
-                            <div class="nav-bar-right">
-                                <div class="text-wrapper-2">Features</div>
-                                <div class="text-wrapper-3">About Us</div>
-                                <div class="contact-button">
-                                    <div class="overlap-group-2">
-                                        <div class="rectangle"></div>
-                                        <div class="text-wrapper-4">Try us for free</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="text-wrapper">SoundScript</div>
+                <div class="nav-bar-right">
+                    <div class="text-wrapper-2">Features</div>
+                    <div class="text-wrapper-3">About Us</div>
+                    <div class="contact-button">
+                        <div class="text-wrapper-4">Try us for free</div>
                     </div>
                 </div>
             </header>
@@ -37,7 +145,7 @@
                     <input type="password" id="password" name="password" required>
                     <button type="submit">Login</button>
                 </form>
-                <p>Don't have an account? <a href="{{ url_for('register') }}">Register here for free</a>.</p>
+                <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a>.</p>
             </div>
         </div>
     </div>
