@@ -10,17 +10,8 @@
   background-color: #ffffff;
   overflow-x: hidden;
   width: 1440px;
-  height: 2752px;
+  height: 2430px;
   position: relative;
-}
-
-.frame .header {
-  position: absolute;
-  width: 1442px;
-  height: 1123px;
-  top: 0;
-  left: -2px;
-  background-color: transparent;
 }
 
 .frame .overlap {
@@ -32,7 +23,7 @@
 .frame .background {
   position: absolute;
   width: 1440px;
-  height: 1123px;
+  height: 650px;
   top: 0;
   left: 2px;
   object-fit: cover;
@@ -47,17 +38,19 @@
 }
 
 .frame .overlap-group {
-  position: relative;
+  position: fixed;
+  top: 0px;
   width: 1440px;
   height: 80px;
   background-color: #00344f;
+  z-index: 1000;
 }
 
 .frame .text-wrapper {
   position: absolute;
   width: 164px;
   height: 52px;
-  top: 25px;
+  top: 30px;
   left: 135px;
   font-family: "Inknut Antiqua-Bold", Helvetica;
   font-weight: 700;
@@ -93,10 +86,10 @@
 
 .frame .text-wrapper-3 {
   position: absolute;
-  width: 96px;
+  width: 102px;
   height: 23px;
   top: 12px;
-  left: 166px;
+  left: 163px;
   font-family: "Inknut Antiqua-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -134,7 +127,7 @@
   position: absolute;
   width: 197px;
   height: 46px;
-  top: 0;
+  bottom: -12px;
   left: 1px;
   font-family: "Inknut Antiqua-Bold", Helvetica;
   font-weight: 700;
@@ -143,14 +136,13 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  padding-top: 12px
 }
 
 .frame .title {
   position: absolute;
   width: 1141px;
   height: 312px;
-  top: 393px;
+  top: 165px;
   left: 153px;
 }
 
@@ -158,7 +150,7 @@
   position: absolute;
   width: 725px;
   height: 126px;
-  bottom: 400px;
+  top: 0;
   left: 206px;
   font-family: "Inknut Antiqua-Bold", Helvetica;
   font-weight: 700;
@@ -173,7 +165,7 @@
   position: absolute;
   width: 1137px;
   height: 89px;
-  bottom: 310px;
+  top: 70px;
   left: 0;
   font-family: "Gabriela-Regular", Helvetica;
   font-weight: 400;
@@ -188,7 +180,7 @@
   position: absolute;
   width: 412px;
   height: 58px;
-  top: 254px;
+  top: 160px;
   left: 363px;
 }
 
@@ -200,10 +192,10 @@
 
 .frame .rectangle-2 {
   position: absolute;
-  width: 250px;
-  height: 45px;
-  bottom: 315px;
-  left: 80px;
+  width: 370px;
+  height: 57px;
+  bottom: 10px;
+  left: 21px;
   background-color: #00aaff;
   border-radius: 50px;
 }
@@ -212,12 +204,12 @@
   position: absolute;
   width: 410px;
   height: 58px;
-  bottom: 290px;
+  top: 0;
   left: 0;
   font-family: "Lilita One-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 30px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -227,7 +219,7 @@
   position: absolute;
   width: 1154px;
   height: 852px;
-  top: 1128px;
+  top: 700px;
   left: 102px;
 }
 
@@ -526,7 +518,7 @@
   width: 124px;
   height: 61px;
   top: 216px;
-  left: 10px;
+  left: 5px;
 }
 
 .frame .text-wrapper-17 {
@@ -544,36 +536,36 @@
   line-height: normal;
 }
 
-.frame .twitter-icon {
+.frame .github-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   top: 36px;
-  left: 5px;
+  left: 15px;
 }
 
 .frame .linkedin-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   top: 36px;
-  left: 60px;
+  left: 55px;
 }
 
-.frame .github-icon {
+.frame .x-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   top: 36px;
-  left: 115px;
+  left: 95px;
 }
 
 .frame .features {
   position: absolute;
   width: 1077px;
   height: 609px;
-  top: 2005px;
-  left: 102px;
+  top: 1650px;
+  left: 135px;
 }
 
 .frame .features-grid {
@@ -860,7 +852,7 @@
   position: absolute;
   width: 1446px;
   height: 110px;
-  top: 2639px;
+  top: 2300px;
   left: -1px;
 }
 
@@ -877,7 +869,7 @@
   position: absolute;
   width: 141px;
   height: 46px;
-  top: 3px;
+  top: 5px;
   left: 634px;
   font-family: "Lilita One-Regular", Helvetica;
   font-weight: 400;
@@ -917,3 +909,172 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+/* register.html styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #00344f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.nav-bar .text-wrapper {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-bar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar-right .contact-button {
+  background-color: #005f87;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-bar-right .contact-button:hover {
+  background-color: #004d6b;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 100px; 
+  max-width: 400px;
+  width: 100%;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container label {
+  font-size: 14px;
+  text-align: left;
+}
+
+.container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #00344f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button:hover {
+  background-color: #005f87;
+}
+
+.container p {
+  font-size: 14px;
+}
+
+.container a {
+  color: #00344f;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+/* end of register styling*/
+
+/* Additional specific styles for login form */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container label {
+  margin-bottom: 8px;
+}
+.container input[type="text"],
+.container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.container button[type="submit"] {
+  padding: 10px;
+  background-color: #00344f;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.container button[type="submit"]:hover {
+  background-color: #001f2e;
+}
+.container p {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+.container a {
+  color: #00344f;
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* end of styles for login form */

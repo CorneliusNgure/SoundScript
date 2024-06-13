@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="div">
+            <header class="header">
+                <div class="overlap">
+                    <div class="nav-bar">
+                        <div class="overlap-group">
+                            <div class="text-wrapper">SoundScript</div>
+                            <div class="nav-bar-right">
+                                <div class="text-wrapper-2">Features</div>
+                                <div class="text-wrapper-3">About Us</div>
+                                <div class="contact-button">
+                                    <div class="overlap-group-2">
+                                        <div class="rectangle"></div>
+                                        <div class="text-wrapper-4">Try us for free</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <h1>Login</h1>
+                <form action="/login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="{{ url_for('register') }}">Register here for free</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
