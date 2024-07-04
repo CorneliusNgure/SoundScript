@@ -1,0 +1,38 @@
+/SoundScript
+│
+├── /docs
+│   └── documentation.md
+│
+├── /src
+│   ├── /backend
+│   │   └── app.py
+│   │   └── routes.py
+│   │   └── models.py
+│   │   └── utils.py
+│   │   └── config.py
+│   ├── /frontend
+│   │   └── index.html
+│   │   └── styles.css
+│   │   └── app.js
+│
+├── /data
+│   └── database.db
+│   └── sample_audio.wav
+│
+├── /tests
+│   └── test_app.py
+│   └── test_routes.py
+│
+├── /venv
+│   └── (virtual environment files)
+│
+├── /scripts
+│   └── setup.sh
+│   └── run_server.sh
+│
+├── /config
+│   └── config.json
+│
+├── README.md
+├── .gitignore
+└── requirements.txt

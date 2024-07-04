@@ -1,148 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundScript</title>
     <link rel="stylesheet" href="../static/css/styles.css">
-  </head>
-  <body>
-    <div class="frame">
-      <div class="div">
-        <header class="header">
-          <div class="overlap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="container">
+            <div class="top-bar">
+                <div class="left-text">
+                    <a href="#">SoundScript</a>
+                </div>
+                <div class="right-text">
+                    <a href="#">Transcribe Text</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
             <img class="background" src="../static/images/Banner_image.png" alt="person typing">
-            <div class="nav-bar">
-              <div class="overlap-group">
-                <div class="text-wrapper">SoundScript</div>
-                <div class="nav-bar-right">
-                  <div class="text-wrapper-2">Features</div>
-                  <div class="text-wrapper-3">About Us</div>
-                  <div class="contact-button">
-                    <div class="overlap-group-2">
-                      <div class="rectangle"></div>
-                      <div class="text-wrapper-4">Try us for free</div>
+            <div class="soundscript-title">SoundScript</div>
+            <div class="soundscript-text">
+                <p>Your Reliable Transcription Service Powered by AI</p>
+                <a href="#">Upload Your Audio File</a>
+            </div>
+            <div class="free-service-banner">
+                <p>SoundScript transcription service is completely FREE!</p>
+            </div>
+            <div class="about-us" id="about-us">
+                <h1>About Us</h1>
+                <p>Welcome to SoundScript transcription service. 
+                    SoundScript allows users to upload audio files and convert them to text using AI technology. 
+                    The project was inspired by the need to make audio-to-text transcription accessible and 
+                    efficient for everyone. Many of us, including students, journalists, and content creators, 
+                    often face the tedious task of converting spoken words into written text. 
+                    Existing solutions are often costly and complex, making the process cumbersome.<br><br>
+
+                    I envisioned a tool that simplifies this task by leveraging advanced speech recognition technology. 
+                    By using AssemblyAI's powerful API, SoundScript aims to deliver high-quality transcriptions 
+                    through an intuitive interface, saving users valuable time and effort.
+                    
+                    SoundScript empowers users to focus on what truly matters: capturing important ideas and 
+                    creating meaningful content without being bogged down by manual transcription. 
+                    I am passionate about making this technology accessible to all.</p>
+                    <h2>Team Members: <span class="name">Cornelius Ngure</span></h2>
+                <div class="team-member">
+                    <p>I am a junior developer currently expanding my coding skills at ALX-Africa, 
+                        and passionate about web development and AI technologies. 
+                        This is my portfolio project. I worked on the front-end design 
+                        and user interface, database and backend of this project.</p>
+                    <h2>Technologies Used</h2>
+                    <ul class="stack">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python with Flask</li>
+                        <li>SQLite</li>
+                        <li>Machine Learning API</li>
+
+                    </ul>
+                    <h2>Acknowledgment</h2>
+                    <p>I would like to thank the ALX mentors, teachers and peers who responded to my stubborness on a  
+                        moment's notice, not to mention the entier ALX fraternity for guidance and support throughout this project. 
+                        In particular, I appreciate the feedback from Cohort #21 members that partook in project reviews. 
+                        Without your input, this project would be a shambolic mess, if anything at all. 
+                        I don't take your assistance for granted. May the odds always be stack in your favor. Again, Aregato!</p>
+                </div>
+            </div>
+            <h1>Features</h1>
+            <div class="features-grid">
+                <div class="feature">
+                    <img class="accurate-transcription" src="../static/images/Accurate_transcription.png" alt="accuracy">
+                    <div class="feature-description">
+                        <h3>Accurate Transcription</h3>
+                        <p>Experience high accuracy with our <br>
+                            state-of-the-art transcription engine</p>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="title">
-              <div class="text-wrapper-5">SoundScript</div>
-              <p class="p">Transforming Audio to Text Automatically Using AI</p>
-              <div class="transform-your-text">
-                <div class="overlap-group-3">
-                  <div class="rectangle-2"></div>
-                  <div class="text-wrapper-6">Transform Your Text Here</div>
+                <div class="feature">
+                    <img class="accurate-transcription" src="../static/images/Downloadable.webp" alt="accuracy">
+                    <div class="feature-description">
+                        <h3>Downloadable Transcripts</h3>
+                        <p>Download your transcripts in various formats <br>
+                            such as TXT, PDF, or DOCX for offline use. </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </header>
-        <div class="about-section">
-          <div class="overlap-2">
-            <div class="text-wrapper-7">About Us</div>
-            <div class="text-wrapper-8">Welcome to SoundScript</div>
-          </div>
-          <div class="text-wrapper-9">Our Inspiration</div>
-          <p class="soundscript-was">
-            SoundScript was inspired by the need to make audio-to-text transcription accessible and efficient for
-            everyone. Many of us, including students, journalists, and content creators, often face the tedious task of
-            converting spoken words into written text. Existing solutions are often costly and complex, making the
-            process cumbersome.<br /><br />Our founder, Cornelius Ngure, envisioned a tool that simplifies this task by
-            leveraging advanced speech recognition technology. By using AssemblyAI&#39;s powerful API, SoundScript aims
-            to deliver high-quality transcriptions through an intuitive interface, saving users valuable time and
-            effort.<br /><br />SoundScript empowers users to focus on what truly matters—capturing important ideas and
-            creating meaningful content—without being bogged down by manual transcription. We&#39;re passionate about
-            making this technology accessible to all.
-          </p>
-          <div class="technology-stack">
-            <div class="text-wrapper-10">Technology Stack</div>
-            <img class="img" src="../static/images/Technology_stack.png" alt="technology stack">
-            <p class="soundscript-is-built">
-              <span class="span">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <span class="text-wrapper-11">SoundScript is built using:<br />Backend:</span>
-              <span class="span"> Python with Flask<br /></span>
-              <span class="text-wrapper-11">Database:</span>
-              <span class="span"> SQLite<br /></span>
-              <span class="text-wrapper-11">Transcription Engine:</span>
-              <span class="span"> AssemblyAI<br /></span>
-              <span class="text-wrapper-11">Frontend:</span>
-              <span class="span"> HTML, CSS, JavaScript</span>
-            </p>
-          </div>
-          <div class="text-wrapper-12">Contact Us</div>
-          <div class="name-input">
-            <div class="text-wrapper-13">Name</div>
-            <div class="rectangle-3"></div>
-          </div>
-          <div class="email-input">
-            <div class="text-wrapper-14">Email</div>
-            <div class="rectangle-4"></div>
-          </div>
-          <div class="overlap-3">
-            <div class="message-input">
-              <button class="send-button">
-                <div class="div-wrapper"><div class="text-wrapper-15">Send</div></div>
-              </button>
-              <div class="text-wrapper-16">Message</div>
-              <div class="rectangle-5"></div>
+            <div class="features-grid">
+                <div class="feature">
+                    <img class="accurate-transcription" src="../static/images/Ease_of_use.png" alt="ease of use">
+                    <div class="feature-description">
+                        <h3>Ease of USe</h3>
+                        <p>Upload file and get your transcription <br>
+                            file in just a few clicks</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="accurate-transcription" src="../static/images/Secure-and-Private-1.png" alt="secure and private">
+                    <div class="feature-description">
+                        <h3>Security and Privacy</h3>
+                        <p>Your data is safe with us with, <br>
+                            top-notch security and privacy measures.</p>
+                    </div>
+                </div>
             </div>
-            <div class="follow-us">
-              <div class="text-wrapper-17">Follow us</div>
-              <img class="github-icon" src="../static/images/github.png" alt="github icon">
-              <img class="linkedin-icon" src="../static/images/linkedin.png" alt="linkedin icon">
-              <img class="x-icon" src="../static/images/x.png" alt="x icon">
+            <div class="features-grid">
+                <div class="feature">
+                    <img class="accurate-transcription" src="../static/images/Multi-language_support.png" alt="Multi language support">
+                    <div class="feature-description">
+                        <h3>Multi-language Support</h3>
+                        <p>Transcribe audio files in multiple <br>
+                            languages with high accuracy. Perfect <br>
+                            for international users and content creators.</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <footer class="footer">
+                <p>&copy; 2024 SoundScript. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/CorneliusNgure" target="_blank"><img src="../static/images/github.png" alt="GitHub Icon"></a>
+                    <a href="https://www.linkedin.com/in/cornelius-ngure-93581a216/" target="_blank"><img src="../static/images/linkedin.png" alt="LinkedIn Icon"></a>
+                    <a href="https://x.com/Zeros__n__Ones" target="_blank"><img src="../static/images/x.png" alt="Twitter Icon"></a>
+            </footer>
         </div>
-        <div class="features">
-          <div class="features-grid">
-            <div class="text-wrapper-18">Features</div>
-            <div class="accurate">
-              <img class="accurate-2" src="../static/images/Accurate_transcription.png" alt="accurate transcription">
-              <div class="overlap-group-4">
-                <div class="heading-accurate">Accurate Transcription</div>
-                <p class="description">Experience high accuracy with our state-of-the-art transcription engine.</p>
-              </div>
-            </div>
-            <div class="ease-of-use">
-              <img class="ease-of-use-2" src="../static/images/Ease_of_use.png" alt="ease of use">
-              <div class="heading-ease-of-use">Ease of Use</div>
-              <p class="description-2">Upload your audio files and get transcriptions in just a few clicks.</p>
-            </div>
-            <div class="multi-language">
-              <img class="multi-language-2" src="../static/images/Multi-language_support.png" alt="multi-language">
-              <div class="heading-multi">Multi-Language Support</div>
-              <p class="description-3">
-                Transcribe audio files in multiple languages with high accuracy. Perfect for international users and
-                content creators.
-              </p>
-            </div>
-            <div class="downloadable">
-              <img class="downloadable-2" src="../static/images/Downloadable.webp" alt="download arrow">
-              <div class="overlap-4">
-                <div class="heading-downloadable">Downloadable Transcripts</div>
-                <p class="description-4">
-                  Download your transcriptions in various formats such as TXT, PDF, or DOCX for offline use.
-                </p>
-              </div>
-            </div>
-            <div class="security-and-privacy">
-              <img class="secure-and-private" src="../static/images/Secure-and-Private-1.png" alt="secure and private">
-              <div class="overlap-5">
-                <div class="heading-security-and">Security and Privacy</div>
-                <p class="description-5">Your data is safe with us, with top-notch security and privacy measures</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="billing-section">
-          <div class="overlap-6">
-            <div class="text-wrapper-19">FREE</div>
-            <p class="text-wrapper-20">That’s right! SoundScript transcribes your audio for free.</p>
-          </div>
-          <p class="text-wrapper-21">© 2024 SoundScript. All rights reserved</p>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
