@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../static/css/styles.css">
-  </head>
-  <body>
-    <div class="nav-bar">
-      <div class="text-wrapper">SoundScript</div>
-      <div class="nav-bar-right">
-        <div class="text-wrapper-2">Features</div>
-        <div class="text-wrapper-3">About Us</div>
-        <div class="contact-button">
-          <div class="text-wrapper-4">Try us for free</div>
-        </div>
-      </div>
-    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SoundScript</title>
+    <link rel="stylesheet" href="../static/css/register_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
     <div class="container">
-      <h1>Register</h1>
-      <form action="/register" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Register</button>
-      </form>
-      <p>Already have an account? <a href="{{ url_for('login') }}">Log in</a>.</p>
+        <div class="top-bar">
+            <div class="left-text">
+                <a href="index.html">SoundScript</a>
+            </div>
+            <div class="right-text">
+                <a href="">Home</a>
+                <a href="">Contact Us</a>
+                <a href="">About Us</a>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Register</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="register.html">Login here</a></p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 SoundScript</p>
+            <div class="social-icons">
+                <a href="https://github.com/CorneliusNgure target=" target="_blank"><img src="../static/images/github.png" alt="GitHub Icon"></a>
+                <a href="https://www.linkedin.com/in/cornelius-ngure-93581a216/" target="_blank"><img src="../static/images/linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="https://x.com/Zeros__n__Ones" target="_blank"><img src="../static/images/x.png" alt="Twitter Icon"></a>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
