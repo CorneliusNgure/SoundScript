@@ -177,7 +177,7 @@ h1 {
     font-size: 20px;
     padding: 10px;
 }
-.bottom-bar {
+/* .bottom-bar {
     position: fixed;
     margin-bottom: 10px;
     bottom: 20px;
@@ -186,7 +186,7 @@ h1 {
     background-color: #00344f;
     color: white;
     align-items: center;
-}
+} */
 .footer {
     background-color: #00344f;
     color: white;
