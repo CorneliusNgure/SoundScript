@@ -24,34 +24,34 @@
         <div class="connect-with-us-text">
             <h1>Connect With Us</h1>
             <p>We would love to respond to your queries and help you succeed.
-                Feel free to ge in thouch with us.</p>
+                Feel free to ge in touch with us.</p>
         </div> 
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Send your request</h3>
-                    <form>
+                    <form action="/contact_us" method="POST">
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label>
-                                <input type="text" placeholder="John Doe">
+                                <input type="text" name="name" placeholder="John Doe">
                             </div>
                             <div class="input-group">
                                 <label>Phone</label>
-                                <input type="text" placeholder="+254 XXX XXX XXX">
+                                <input type="text" name="phone" placeholder="+254 XXX XXX XXX">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="email" placeholder="example@email.com">
+                                <input type="email" name="email" placeholder="example@email.com">
                             </div>
                             <div class="input-group">
                                 <label>Subject</label>
-                                <input type="text" placeholder="Product Demo">
+                                <input type="text" name="subject" placeholder="Product Demo">
                             </div>
                         </div>
                         <label>Message</label>
-                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <textarea rows="5" name = "message" placeholder="Your Message"></textarea>
                         <button type="submit">SEND</button>
                     </form>
                 </div>

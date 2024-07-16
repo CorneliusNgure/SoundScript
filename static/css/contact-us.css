@@ -102,6 +102,7 @@ label {
 }
 button {
     background: #1c00b5;
+    cursor: pointer;
     width: 100px;
     border: none;
     outline: none;
