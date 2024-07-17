@@ -27,7 +27,7 @@ class DevelopmentConfig(Config):
     SESSION_COOKIE_SECURE = False
 
 class TestingConfig(Config):
-    TESIING = True
+    TESTING = True
 
     DB_NAME = 'development-db'
     DB_USERNAME = 'root'

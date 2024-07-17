@@ -1,6 +1,7 @@
 from soundscript import app
 import os
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, jsonify
+from werkzeug.utils import secure_filename
 
 @app.route("/")
 def index():
@@ -46,3 +47,21 @@ def contact_us():
         
         return redirect(request.url)
     return render_template("contact_us.html")
+
+@app.route("/uploads", methods=["POST", "GET"])
+def upload_file():
+    if request.method == "POST":
+        if 'audiofile' not in request.files:
+            return jsonify({"message": "No file part in the request"}), 400
+
+        file = request.files["audiofile"]
+
+        if file.filename == '':
+            return jsonify({"message": "No selected file"}), 400
+
+        if file:
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config["UPLOADS"], filename))
+            return jsonify({"message": "File uploaded successfully"}), 200
+
+    return render_template('upload.html')
