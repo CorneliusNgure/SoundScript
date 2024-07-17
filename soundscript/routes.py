@@ -1,8 +1,11 @@
 from soundscript import app
+import os
 from flask import render_template, request, redirect
 
 @app.route("/")
 def index():
+    print(f"FLASK_ENV: {os.getenv('FLASK_ENV')}")
+    print(app.config["DB_NAME"])
     return render_template("index.html")
 
 @app.route("/register", methods=["POST", "GET"])
