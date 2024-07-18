@@ -5,7 +5,12 @@ from config.config import DevelopmentConfig
 
 app = Flask(__name__, template_folder="../templates", 
                         static_folder="../static")
+
 app.config.from_object(DevelopmentConfig)
+
+app.config['UPLOADS'] = os.environ.get('UPLOADS') or os.path.join(os.getcwd(), 'uploads')
+if not os.path.exists(app.config['UPLOADS']):
+    os.makedirs(app.config['UPLOADS'])
 
 env = os.environ.get("FLASK_ENV")
 if env == "production":

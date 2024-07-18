@@ -64,4 +64,4 @@ def upload_file():
             file.save(os.path.join(app.config["UPLOADS"], filename))
             return jsonify({"message": "File uploaded successfully"}), 200
 
-    return render_template('upload.html')
+    return render_template('uploads.html')

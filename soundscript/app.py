@@ -7,8 +7,6 @@ from soundscript import app
 
 # load_dotenv() #load env. variable from keys.env
 
-# app = Flask(__name__, template_folder="../templates", 
-                        # static_folder="../static")
 # app.config.from_object('config.DevelopmentConfig')
 
 # db = SQLAlchemy(app)
