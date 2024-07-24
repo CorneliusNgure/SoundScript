@@ -2,7 +2,7 @@ from soundscript import app
 import os
 from flask import render_template, request, redirect, jsonify, url_for
 from werkzeug.utils import secure_filename
-from api.assemblyai import transcribe_audio
+from soundscript.api.assemblyai import transcribe_audio
 
 @app.route("/")
 def index():
