@@ -49,7 +49,7 @@ def contact_us():
         return redirect(request.url)
     return render_template("contact_us.html")
 
-@app.route("/uploads", methods=["POST", "GET"])
+@app.route("/upload_file", methods=["POST", "GET"])
 def upload_file():
     if request.method == "POST":
         if 'audiofile' not in request.files:
@@ -86,4 +86,4 @@ def upload_file():
                 "transcript": transcript_text,
                 }), 200
 
-    return render_template('uploads.html')
+    return render_template('upload_files.html')
