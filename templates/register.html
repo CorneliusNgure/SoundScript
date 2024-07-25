@@ -13,12 +13,12 @@
     <div class="container">
         <div class="top-bar">
             <div class="left-text">
-                <a href="https://soundscript-zxru.onrender.com/index.html">SoundScript</a>
+                <a href="{{ url_for('index') }}">SoundScript</a>
             </div>
             <div class="right-text">
-                <a href="https://soundscript-zxru.onrender.com/index.html">Home</a>
-                <a href="https://soundscript-zxru.onrender.com/contact_us.html">Contact Us</a>
-                <a href="https://soundscript-zxru.onrender.com/index.html">About Us</a>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('contact_us') }}">Contact Us</a>
+                <a href="{{ url_for('index') }}">About Us</a>
             </div>
         </div>
         <div class="form-container">
@@ -38,7 +38,7 @@
                 
                 <button type="submit">Register</button>
             </form>
-            <p class="login-link">Already have an account? <a href="https://soundscript-zxru.onrender.com/login.html">Login here</a></p>
+            <p class="login-link">Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
         </div>
         <div class="footer">
             <p>&copy; 2024 SoundScript</p>
