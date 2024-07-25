@@ -63,10 +63,14 @@ def upload_file():
         if file:
             filename = secure_filename(file.filename)
             file_path = os.path.join(app.config["UPLOADS"], filename)
+            
+            print(f"Saving file to: {file_path}") # debugging
+
             file.save(file_path)
 
             # URL for the uploaded file
             audio_url = url_for('static', filename=f'uploads/{filename}', _external=True)
+            print(f"Audio URL: {audio_url}")
             transcript_text, transcript_utterances = transcribe_audio(audio_url)
 
             return jsonify({

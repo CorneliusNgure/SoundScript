@@ -8,7 +8,9 @@ app = Flask(__name__, template_folder="../templates",
 
 app.config.from_object(DevelopmentConfig)
 
-app.config['UPLOADS'] = os.environ.get('UPLOADS') or os.path.join(os.getcwd(), 'uploads')
+# app.config['UPLOADS'] = os.environ.get('UPLOADS') or os.path.join(os.getcwd(), 'uploads')
+
+app.config['UPLOADS'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')
 if not os.path.exists(app.config['UPLOADS']):
     os.makedirs(app.config['UPLOADS'])
 
