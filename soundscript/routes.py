@@ -2,7 +2,7 @@ from soundscript import app
 import os
 from flask import render_template, request, redirect, jsonify, url_for
 from werkzeug.utils import secure_filename
-from soundscript.api.assemblyai import transcribe_audio
+from soundscript.api_speech_to_text.api_communication import process_transcription
 
 @app.route("/")
 def index():
@@ -68,15 +68,22 @@ def upload_file():
 
             file.save(file_path)
 
-            # URL for the uploaded file
-            audio_url = url_for('static', filename=f'uploads/{filename}', _external=True)
-            print(f"Audio URL: {audio_url}")
-            transcript_text, transcript_utterances = transcribe_audio(audio_url)
+            # PROCESS TRANSCRIPT
+            process_transcription(file_path)
+
+            # # URL for the uploaded file
+            # audio_url = url_for('static', filename=f'uploads/{filename}', _external=True)
+            # print(f"Audio URL: {audio_url}")
+            # transcript_text, transcript_utterances = transcribe_audio(audio_url)
+
+            #READ TRANSCRIPT
+            text_filename = file_path + '.txt'
+            with open(text_filename, "r") as f:
+                transcript_text = f.read()
 
             return jsonify({
                 "message": "File uploaded successfully",
                 "transcript": transcript_text,
-                "utterances": transcript_utterances
                 }), 200
 
     return render_template('uploads.html')

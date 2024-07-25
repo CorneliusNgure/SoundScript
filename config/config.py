@@ -9,7 +9,7 @@ class Config(object):
     DB_USERNAME = 'root'
     DB_PASSWORD = 'example'
 
-    UPLOADS = os.environ.get('UPLOADS') or os.path.join(os.getcwd(), 'soundscript', 'uploads')
+   # UPLOADS = os.environ.get('UPLOADS') or os.path.join(os.getcwd(), 'soundscript', 'uploads')
 
     SESSION_COOKIE_SECURE = True
 

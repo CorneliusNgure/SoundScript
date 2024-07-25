@@ -65,6 +65,8 @@
                         return xhr;
                     },
                     success: function(data) {
+                        console.log("Server response:", data); // Debugging line to inspect the data object
+
                         if (data.message) {
                             alert(data.message); // Show a success message
                         }
@@ -74,9 +76,15 @@
                                 <p>Transcript: ${data.transcript}</p>
                                 <p>Public URL: <a href="${data.public_url}" target="_blank">${data.public_url}</a></p>
                             `);
+                        } else {
+                            uploadResult.html(`
+                                <p>File uploaded successfully.</p>
+                                <p>Transcript is not available.</p>
+                            `);
                         }
                     },
                     error: function(xhr, status, error) {
+                        console.log('Upload failed:', xhr.responseText); // Log the error response
                         alert('Upload failed: ' + error);
                     }
                 });

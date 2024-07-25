@@ -30,7 +30,5 @@ dist/
 #project layout
 SoundScript-Schema.txt
 
-soundscript/api/api_secrets.py
-
 #test file
 test_file.wav
